@@ -9,5 +9,5 @@ for symbol in some_str:
 
 print(some_str.__sizeof__())
 
-
+  
 print(some_str.lower())
