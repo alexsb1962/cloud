@@ -1,9 +1,8 @@
-
-#!usr/bih/env python3
-
-from math import *
-import numpy as np
+# Simple example of using general timer objects. This is used to update
+# the time placed in the title of the figure.
 import matplotlib.pyplot as plt
+import numpy as np
+from datetime import datetime
 
 
 def update_title(axes):
@@ -27,9 +26,4 @@ timer.start()
 #    fig.canvas.mpl_disconnect(drawid)
 #drawid = fig.canvas.mpl_connect('draw_event', start_timer)
 
-
-x = np.arange(-5.0,5.0,0.01)
-y = 2.0*np.exp(-x/1.1)
-
-plt.plot(x,y)
 plt.show()
